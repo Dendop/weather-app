@@ -4,13 +4,16 @@
     align-items: center;
     width : 275px;
     height : 200px;
-    border : 1px solid #303030;
+    border : 3px solid #96dee0;
     padding : 5px;
     background-color: linear-gradient(150deg,  #8e44ad, #00bcd4);
     background-size: 200% 200%;
     background-position: center center;
     border-radius: 10px;
     
+}
+form {
+    font-family: montserrat;
 }
 
 #button {
@@ -52,6 +55,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
 #header_on_panel {
     display: flex;

@@ -10,7 +10,7 @@
 <body>
     <form method = "POST" id = "weather-form">
         <div id = "panel">
-            <label id = "header_on_panel">Enter the City:</label><br>
+            <label id = "header_on_panel">Check the Weather</label><br>
             <input type = "text" name = "city" class="city" placeholder = "Enter City">
             
             <div class="radio-group">
@@ -22,7 +22,7 @@
             <button id = "button" type = "submit">Search</button>
         </div>
         <div id = "result">
-            
+            <!-- js send received data here-->
         </div>
     </form>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>

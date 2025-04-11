@@ -31,7 +31,7 @@ def home():
             
             #if success
             if response.status_code == 200:
-                
+                 
                 description = data['weather'][0]['description']
                 temperature = data['main']['temp']
                 weather_id = data['weather'][0]['id'] #for more advanced
