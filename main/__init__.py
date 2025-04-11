@@ -18,16 +18,16 @@ def home():
         units = data.get("units")#this gets the required units
         
         url = (
-            f"{BASE_WEATHER_API_URL}?q={city_name}"
+            f"{BASE_WEATHER_API_URL}?q={city_name}" 
             f"&units={units}&appid={API_KEY}"
         )
         try:
             
             response = requests.get(url)
-            print(response.status_code)
+            #print(response.status_code)
             
             data = response.json()
-            print("Response JSON:", data)
+            #print("Response JSON:", data)
             
             #if success
             if response.status_code == 200:
@@ -35,9 +35,9 @@ def home():
                 description = data['weather'][0]['description']
                 temperature = data['main']['temp']
                 weather_id = data['weather'][0]['id'] #for more advanced
-                print("Description", description)
-                print("temperature", temperature)
-                print(city_name)
+                #print("Description", description)
+                #print("temperature", temperature)
+                #print(city_name)
                 
                 return  jsonify({
                     "city_name": city_name,
