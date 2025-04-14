@@ -42,5 +42,6 @@ document.getElementById('weather-form').addEventListener('submit', function (eve
     .catch(error => {
         console.error("Error:", error);
         document.getElementById('result').innerHTML = "<p>An error occurred. Please try again later.</p>";
+        resultDiv.style.visibility = 'visible';
     });
 });
