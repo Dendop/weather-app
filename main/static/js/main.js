@@ -41,7 +41,7 @@ document.getElementById('weather-form').addEventListener('submit', function (eve
     })
     .catch(error => {
         console.error("Error:", error);
-        document.getElementById('result').innerHTML = "<p>An error occurred. Please try again later.</p>";
+        document.getElementById('result').innerHTML = "<p>Could not find the city. Try again.</p>";
         resultDiv.style.visibility = 'visible';
     });
 });
