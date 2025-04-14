@@ -2,9 +2,8 @@ from flask import Flask, render_template, request, jsonify
 import configparser
 import requests
 
-config = configparser.ConfigParser()
-config.read('secrets.ini')
-API_KEY = config['openweather']['api_key']
+
+API_KEY = os.environ.get('api_key')
 BASE_WEATHER_API_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 app = Flask(__name__)
