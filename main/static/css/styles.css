@@ -13,7 +13,7 @@
     
 }
 form {
-    font-family: montserrat;
+    font-family: montserrat,sans-serif;
 }
 
 #button {
@@ -61,4 +61,20 @@ body {
     display: flex;
     align-items: center;
     margin-top: 20px;
+}
+
+#result {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 50px;
+    border: 3px solid #96dee0;
+    border-radius : 10px;
+    font-family: montserrat,sans-serif;
+    visibility: hidden; /* starts as hidden when loading the page, if data results then */
+}
+.weather-icon {
+    width: 64px;
+    height: 64px;
 }
