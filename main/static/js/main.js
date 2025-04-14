@@ -8,7 +8,7 @@ document.getElementById('weather-form').addEventListener('submit', function (eve
     const resultDiv = document.getElementById('result');
     
 
-    //hide result
+    //hide result, untill data is received
     resultDiv.style.visibility = 'hidden';
     resultDiv.innerHTML = "";
  
